@@ -1,0 +1,775 @@
+<html>
+<head>
+<title>Srav's tecK</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<script>
+
+</script>
+
+<style>
+	
+body, html {
+	height:100%;
+	margin:0;
+	line-height:180%;
+	color:#666;
+	text-align:center;
+}
+
+
+/*----------------------------------------NAVIGATION BAR-----------------------------------------*/
+
+	.navbar {
+		overflow: hidden;
+		background-color: #323232;
+		position:fixed;
+		width:100%;
+		padding:4px 16px;z-index:2;
+	}
+
+	.search-box{
+    position: absolute;
+    top: 20%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    background: #2f3640;
+    height: 37px;
+    border-radius: 40px;
+    padding: 10px;
+    }
+    .search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+    }
+    .search-box:hover > .search-btn{
+    background-color: white;
+    }
+    .search-btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 0px;
+    }
+	.navimg {
+		float:right;
+		padding-right:10px;
+		font-size: 100%;
+	}
+	.tab a {
+ 		float:left;
+		display: block;
+		color: #cccfd1;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 25px;
+		font-family: "georgia";
+		padding-left:20px;
+	}
+	.tab a:hover {
+		color:#d1d1d1;
+		background-color:#565759;
+		border-radius:4px;
+	}
+
+	.navimg a {
+ 		float:left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		font-family: "georgia";
+		padding-left:20px;
+	}
+	.navimg a:hover {
+		color:#133246;
+		border-radius:4px;
+	}
+
+
+
+/*---------------------------------------------------------------------------------------------------------*/
+	.parallax1 {
+		background:url("css/images/first.png");
+		min-height:60%;
+	}
+
+	.parallax2 {
+		background:url("css/images/second.jpg");
+		min-height:60%;
+	}
+
+	.parallax3 {
+		background:url("css/images/third.jpg");
+		min-height:40%;
+	}
+
+	.parallax4 {
+		background:url("css/images/fourth.jpg");
+		min-height:60%;
+	}
+
+	.parallax1, .parallax2, .parallax3, .parallax4 {
+		position:relative;
+		opacity:0.8;
+		background-position:center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+	}
+
+	.heading {
+		position:absolute;
+		color:#fff;
+		font-size:550%;
+		width:100%;
+		text-transform:uppercase;
+		letter-spacing:8px;
+		text-shadow: 0 0  10px white;
+		top: 50%;
+  		left: 50%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+	}
+
+	.heading-sm {
+		position:absolute;
+		width:40%;
+		color:white;
+		font-size:250%;
+		text-transform:uppercase;
+		letter-spacing:5px;
+		text-shadow:0 0 10px black;
+		line-height:40px;
+		top: 50%;
+  		left: 50%;
+  		-ms-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+	}
+.one{
+    position: relative;
+    font-family: sans-serif;
+    color:#fff;
+    text-transform: uppercase;
+    font-size: 3em;
+    letter-spacing:1px;
+    overflow: auto;
+    margin: 16px 0px;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:rgba(255,255,255,.01);  
+}
+.text{
+	position: relative;
+    width: 100%;
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing:1px;
+    text-align: center;
+    background: linear-gradient(90deg,#000,#fff,#000);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:rgba(255,255,255,.10); 
+}
+     @keyframes animate{
+      0%{
+        background-position: -500%;
+      }
+      100%{
+        background-position: 500%;
+      }
+     }
+	
+	.secton {
+		overflow:auto;
+		padding:50px 80px;
+		background-color:#323232;
+	}
+
+	.dark1 {
+		overflow:auto;
+		padding:0px 80px;
+		background-color:#323232;
+		color:#f2f2f2;	
+	}
+
+	.dark2 {
+		overflow:auto;
+		padding:50px 80px;
+		background-color:#323232;
+		color:#f2f2f2;
+	}
+
+	.three-col {
+		float:left;
+		width:29%;
+		padding:0 2%;
+		margin:0 auto;
+	}	
+
+
+/*--------------------CATEGORIES SECTION IMAGE HOVER EFFECTS---------------------------*/
+
+	.figure {
+		display:inline-block;
+		width: 300%;
+		height: 200%;
+		margin: 0;
+		padding: 0;
+		background: #fff;
+		overflow: hidden;
+		background-size:cover;
+	}
+
+
+	.figure:hover+span {
+		bottom: -36px;
+		opacity: 1;
+	}
+
+	.hover01 figure img {
+		transform: scale(1);
+		transition: .3s ease;
+		border:3px solid #979a9e;
+		width:100%;
+		height:auto;
+	}
+
+	.hover01 figure:hover img {
+		transform: scale(1.3);
+		border:3px solid white;
+		box-shadow: 3px 5px #242626;
+		border-radius:10px;
+	}
+
+	.hover01 text:hover img {
+		background-color:black;
+		opacity:0.7;
+	}
+
+	.cat-text{
+		top:10%;
+		width:40%;
+		color:white;
+		font-size:300%;
+		text-transform:uppercase;
+		letter-spacing:5px;
+		text-shadow:0 0 10px black;
+		line-height:40px;
+   		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:7%;
+	}
+	
+
+/*-------------------------------FORM SECTION FOR CONTACT US PAGE-------------------------------------*/
+
+	input[type=text],[type=email]{
+		width:50%;
+  		padding: 12px 20px;
+ 	 	margin: 8px 0;
+  		display: inline-block;
+  		border: 2px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;	
+		background-color:#e6e9ed;	
+		transition:0.3s;
+		opacity:0.8;
+	}
+
+	input[type=text]:focus,[type=email]:focus , textarea:focus {
+		border-color:#83f442;
+		box-shadow:0 0 8px 0 #83f442;
+	}
+	
+
+	select {
+		border:2px solid yellow;
+	} 
+
+	textarea {
+		width:50%;
+		height:20%;
+		padding: 12px 20px;
+ 	 	margin: 8px 0;
+  		display: inline-block;
+  		border: 2px solid #ccc;
+  		border-radius: 4px;
+  		box-sizing: border-box;
+		background-color:#e6e9ed;
+		opacity:0.8;
+	}
+
+	.btn {
+		border:2px solid #1ee850;
+		background:none;
+		padding:10px 20px;
+		font-size:20px;
+		font-family:"montserrat";
+		cursor:pointer;
+		margin:10px;
+		transition:0.4s;
+		position:relative;
+		overflow:hidden;
+	}
+
+	.btn1 {
+		color:#1ee850;
+	}
+
+	.btn:hover {
+		color:white;
+	}
+
+	.btn::before {
+		content:"";
+		position:absolute;
+		left:0;
+		width:100%;
+		height:0%;
+		background:#1ee850;
+		opacity:0.4;
+		transition:0.4s;
+	}
+
+	.btn1::before {
+		top:0;
+		border-radius:0 0 50% 50%;
+	}
+
+
+	.btn:hover::before {
+		height:180%;
+
+	}
+
+	.cont-text {
+		top:10%;
+		width:40%;
+		color:white;
+		font-size:350%;
+		text-transform:uppercase;
+		letter-spacing:5px;
+		text-shadow:0 0 10px black;
+		line-height:40px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:5%;
+	}
+
+
+/*-------------------------------------------FOOTER SECTION-----------------------------------------*/
+
+	.footr {
+		border:2px solid #323232;
+		background-color:#323232;
+		width:99.7%;
+		margin-top:10%px;
+		padding-top:1.5%;
+		padding-bottom:2%;
+		overflow:auto;
+	}
+
+	.footer-bottom {
+		background:#323232;
+		color:#686868;
+		height:40px;
+		width:100%;
+		text-align:center;
+		padding-top:10px;
+	}
+
+	.footr-two-col {
+		width:33%;
+		float:left;
+	}
+
+	.footr-link a:link {
+		font-size:120%;
+		color:white;
+	}
+
+	.footr-link a:visited {
+		color:white;
+	}
+
+	.footr-link a:hover {
+		color:#686868;
+	}
+/*----------------------------------IMAGE SLIDE ANIMATION-----------------------------------------------*/
+
+	.slider-text{
+		top:10%;
+		width:40%;
+		color:white;
+		font-size:250%;
+		text-transform:uppercase;
+		letter-spacing:5px;
+		text-shadow:0 0 10px black;
+		line-height:40px;
+		text-align:center;
+		word-spacing:8px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-bottom:3%;
+	}
+
+	.slider {
+		width:800px;
+		height:400px;
+		background:url("css/images/slide1.jpg");
+		margin:40px auto;
+		animation: slide 20s infinite;
+		border:2px solid #6b6d70 ;
+		box-shadow: 0 0 40px rgba(0,0,0,1);
+	}
+
+
+	
+	@keyframes slide {
+		25% {
+			background:url("css/images/slide2.jpg");	
+		}
+
+		50% {
+			background:url("css/images/slide3.jpg");	
+		}
+
+		75% {
+			background:url("css/images/slide4.jpg");	
+		}
+
+		100% {
+			background:url("css/images/slide1.jpg");	
+		}
+	}
+
+
+/*----------------------------RESPONSIVE TEXT, css/images, TEXT BOX AND TEXT AREA-------------------------*/
+	@media (max-width:768px) {
+
+		body, html {
+			height:100%;
+			margin:0;
+			line-height:180%;
+			color:#666;
+			text-align:center;
+		}
+
+		.navbar {
+			width:100%;
+		}
+
+		.tab a {
+			padding-left:5px;
+			font-size:80%;
+		}
+
+
+		.heading {
+			width:100%;
+			font-size:250%;
+			top: 60%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			animation: animate 3s linear infinite;
+  			transform: translate(-50%, -50%);
+		}
+
+		.heading-sm {
+			font-size:85%;
+			top: 50%;
+  			left: 50%;
+  			-ms-transform: translate(-50%, -50%);
+  			transform: translate(-50%, -50%);
+		}
+
+		.three-col {
+			width:90%;
+			padding-bottom:2%;
+			margin:0 auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.footr-two-col {
+			width:90%;
+			padding-bottom:2%;
+			margin:0 auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.hover01 figure img {
+			width:100%;
+			height:auto;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.slider {
+			width:100%;
+			height:20%;
+			background-size:cover;
+		}
+
+		.footr {
+			width:98.9%;
+			margin-top:10%px;
+			padding-top:1.5%;
+			padding-bottom:2%;
+			overflow:hidden;
+		}
+
+		.secton {
+			margin:0 auto;
+		}
+	
+		.cat-text {
+			font-size:120%;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+		.cont-text {
+			font-size:120%;
+			margin-left:auto;
+			margin-right:auto;
+			
+		}
+
+		.slider-text {
+			font-size:120%;
+			margin-left:auto;
+			margin-right:auto;
+			
+		}
+
+		input[type=text],[type=email], textarea {
+			width:100%;
+			height:auto;
+		}
+
+		button {
+			width:45%;
+			height:auto;
+		}
+
+		.navimg { 
+			float:left;
+		}
+		
+		.tab a {
+			float:left;
+		}
+
+	@keyframes slide {
+		25% {
+			background:url("css/images/slide2.jpg");
+			background-size:cover;	
+		}
+
+		50% {
+			background:url("css/images/slide3.jpg");	
+			background-size:cover;
+		}
+
+		75% {
+			background:url("css/images/slide4.jpg");	
+			background-size:cover;
+		}
+
+		100% {
+			background:url("css/images/slide1.jpg");
+			background-size:cover;	
+		}
+	}
+
+	.parallax1 {
+		background:url("css/images/first.jpg");
+		min-height:60%;
+		animation: animate 3s linear infinite;
+	}
+
+	.parallax2 {
+		background:url("css/images/second.jpg");
+		min-height:60%;
+	}
+
+	.parallax3 {
+		background:url("css/images/third.jpg");
+		min-height:40%;
+	}
+
+	.parallax4 {
+		background:url("css/images/fourth.jpg");
+		min-height:60%;
+	}
+	.parallax1, .parallax2, .parallax3, .parallax4 {
+		position:relative;
+		opacity:0.8;
+		background-position:center;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+	}
+
+</style>
+
+<body>
+<!----------------------------------------------Navigation bar---------------------------------------------->
+
+
+<div class="navbar">
+	<div class="tab">
+		<a class="active" href="index.html">HOME</a>
+		<a href="css/service.html">ABOUT US</a>
+		<a href="css/category.html">GADGETS</a>
+		<a href="css/login.html">LOGIN</a>				
+	</div>
+
+	<div class="navimg">
+		<a href="https://www.facebook.com/"><img src="css/images/fb.png" width="45px"></a>
+		<a href="https://www.instagram.com/accounts/login/"><img src="css/images/insta.png" width="45px"></a>
+		<a href="https://twitter.com/login"><img src="css/images/twitter.png" width="45px"></a>	
+	</div>
+</div>
+
+<div class="parallax1">
+	<div class="heading">
+		<p style="font-family: Brush script MT">Srav's TecK</p>
+	</div>
+</div>
+
+
+<!----------------------------------Sliding Image----------------------------------------->
+
+<section class="dark1">	
+<div class="text">Today Deals</div>
+	<div class="slider">
+	</div>
+
+</section>
+
+<div class="parallax2">
+	<div class="heading-sm">
+	<center><p> “TO ERR IS HUMAN, BUT TO REALLY FOUL THINGS UP YOU NEED A COMPUTER.”</p></center>
+	</div>
+</div>
+
+<!----------------------------------Categories Section----------------------------------------------->
+
+<div class="secton">
+	
+	<div class="text">CATEGORIES</div>
+	<br>
+
+	<div class="three-col">
+	   <div class="hover01">
+         <figure><a href="css/deskmain.html"><img src="css/images/cat1.jpg" width="300px" height="200px"></a></figure>
+	   </div>
+	</div>
+
+	<div class="three-col">
+		<div class="hover01">
+    	<figure><a href="css/main.html"><img src="css/images/cat2.jpg" width="300px" height="300px" ></a></figure>
+		</div>
+	</div>
+
+	<div class="three-col">
+		<div class="hover01">
+    	<figure><a href="css/acce.html"><img src="css/images/cat3.jpg" width="300px" height="200px" ></a></figure>
+		</div>
+	</div>
+
+		<div class="three-col">
+	   <div class="hover01">
+         <figure><a href="css/deskmain.html"><img src="css/images/cat4.jpg" width="300px" height="200px"></a></figure>
+	   </div>
+	</div>
+
+	<div class="three-col">
+		<div class="hover01">
+    	<figure><a href="css/main.html"><img src="css/images/cat5.jpg" width="300px" height="200px" ></a></figure>
+		</div>
+	</div>
+
+	<div class="three-col">
+		<div class="hover01">
+    	<figure><a href="css/acce.html"><img src="css/images/cat6.png" width="300px" height="200px" ></a></figure>
+		</div>
+	</div>
+</div>
+
+<div class="parallax3">
+</div>
+
+<!-------------------------------Contact us section------------------------------------->
+
+<div class="dark2">
+	<div class="contbg">
+		<div class="cont">
+		<center>
+		<div class="cont-text">Get in Touch</div>
+  		<form action="connect.php">
+    			<input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required ><br>
+    			<input type="email" id="email" name="email" placeholder="Email" autocomplete="off" required><br>
+    			<input type="text" id="sub" name="subject" placeholder="Subject" autocomplete="off" required><br>
+			<textarea class="textarea" name="message" placeholder="Message" required></textarea><br>
+   	 		<button class="btn btn1">Send email</button>
+  		</form>
+		</center>
+		</div>
+	</div>
+</div>
+
+<div class="parallax4">
+</div>
+
+<!---------------------------------Footer section--------------------------------------------------->
+
+<div class="footr">
+
+	<div class="footr-two-col">
+		<img src="css/images/logo.jpg" width="182" height="90.5">
+	</div>
+
+	<div class="footr-two-col">
+		<a href="https://www.facebook.com/"><img src="css/images/fb.png" width="45px"></a>
+		<a href="https://www.instagram.com/accounts/login/"><img src="css/images/insta.png" width="45px"></a>
+		<a href="https://twitter.com/login"><img src="css/images/twitter.png" width="45px"></a>	
+	</div>
+
+
+</div>
+
+<div class="footer-bottom">
+	&copy; Srav's_TecK.com, Inc.
+</div>
